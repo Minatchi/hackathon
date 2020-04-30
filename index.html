@@ -10,6 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aris-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class=icon-bar"></span>
+               <span class=icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">COVID-19 HELPER</a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="list.html">LIST<span class="sr-only">(current)</span></a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
     <div class="container">
            <table class="table table-striped">
               <tbody>
@@ -105,43 +122,104 @@
                              </div>
                              <div class="form-group">
                                 <label class="col-md-4 control-label">Symptoms</label>
-                                <div class="col-md-8 inputGroupContainer">
-                                   <div class="input-group"><span class="input-group-addon">
-                                       <h5>Select the appropriate</h5>
-                                       <p><label class="container1">Fever
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="container1">Tiredness
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="container1">Dry Cough
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label></p><p>
-                                  <label class="container1">Sour Throat
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="container1">Diarrhoea
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="container1">Runny Nose
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label></p><p>
-                                  <label class="container1">Aches and pains
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="container1">Nasal Congestion
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                  </label></p></div>
-                                </div>
+                                
                              </div>
+                             <div class="form-group">
+                              <label class="col-md-4 control-label">Fever</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Tiredness</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Dry cough</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Sour Throat</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Diarrhoea</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Runny Nose</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="yes">Yes</option>
+                                      <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Aches and pains</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="inpatient">Yes</option>
+                                      <option value="outpatient">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-md-4 control-label">Nasal congestion</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control">
+                                      <option value="inpatient">Yes</option>
+                                      <option value="outpatient">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
                              <div class="form-group">
                                 <label class="col-md-4 control-label">Symptoms lastiong from</label>
                                 <div class="col-md-8 inputGroupContainer">
@@ -151,13 +229,28 @@
                           </fieldset>
                          
                        </form>
-                       <button type="button" >Submit</button>
+                       
+                       <div class="btn-group" aria-label="...">
+                        <centre><div class="btn-group" role="group">
+                           <button type="button" class="btn btn-default">UPDATE</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                         <button type="button" class="btn btn-default">VIEW</button>
+                      </div>
+                      <div class="btn-group" role="group">
+                         <button type="button" class="btn btn-default">DELETE</button>
+                      </div>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default">SUBMIT</button>
+                     </div>
+                     </div>
+                  </div></centre>
                     </td>
                  </tr>
                  
               </tbody>
               
            </table>
-        </div>
+           
 </body>
 </html>
