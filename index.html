@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+           <table class="table table-striped">
+              <tbody>
+                 <tr>
+                    <td colspan="1">
+                       <form class="well form-horizontal">
+                          <fieldset>
+                             <div class="form-group">
+                                 <h2>PERSONAL DETAILS</h2>
+                                <label class="col-md-4 control-label">Person Name</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Person Name" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Address</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">City</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span><input id="city" name="city" placeholder="City" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">State</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span><input id="state" name="state" placeholder="State" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Gender</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-circle-arrow-right"></i></span><input id="gender" name="gender" placeholder="Gender" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Age</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-circle-arrow-right"></i></span><input id="age" name="age" placeholder="Age" class="form-control" required="true" value="" type="number"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Phone Number</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                          </fieldset>
+                       </form>
+                    </td>
+                    <td colspan="1">
+                       <form class="well form-horizontal">
+                          <fieldset>
+                             <div class="form-group">
+                                 <h2>MEDICAL DETAILS</h2>
+                                <label class="col-md-4 control-label">Hospital Name</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span><input id="hospitalName" name="hospitalName" placeholder="Hospital Name" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Patient Id</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span><input id="patientid" name="patientid" placeholder="Patient ID" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Ward no</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span><input id="wardno" name="wardno" placeholder="Ward no" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Patient Type</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group">
+                                      <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                      <select class="selectpicker form-control">
+                                        <option value="inpatient">Inpatient</option>
+                                        <option value="outpatient">Outpatient</option>
+                                      </select>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Admitted Reason</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span><input id="reason" name="reason" placeholder="Admitted Reason" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Symptoms</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon">
+                                       <h5>Select the appropriate</h5>
+                                       <p><label class="container1">Fever
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container1">Tiredness
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container1">Dry Cough
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label></p><p>
+                                  <label class="container1">Sour Throat
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container1">Diarrhoea
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container1">Runny Nose
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label></p><p>
+                                  <label class="container1">Aches and pains
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container1">Nasal Congestion
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label></p></div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <label class="col-md-4 control-label">Symptoms lastiong from</label>
+                                <div class="col-md-8 inputGroupContainer">
+                                   <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"></i></span><input id="lasting_from" name="lasting_from" placeholder="Symptoms lasting from" class="form-control" required="true" value="" type="text"></div>
+                                </div>
+                             </div>
+                          </fieldset>
+                       </form>
+                    </td>
+                 </tr>
+              </tbody>
+           </table>
+        </div>
+</body>
+</html>
